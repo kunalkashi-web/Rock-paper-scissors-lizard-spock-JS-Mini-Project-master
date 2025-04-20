@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div id="score_board">
+      <p>Rock</br>Paper</br>Scissors</br>Lizard</br>Spock</br></p>
+      <div>
+        <p>Score</p>
+        <p id="player_score">0</p>
+      </div>
+    </div>
+    <div id="game_board">
+      <div class="game_chip" id="spock">
+        <div class="border spock_border">
+          <div class="background">
+            <img src="/images/icon-spock.svg" class="game_chip_icon" alt="spock"/>
+          </div>
+        </div>
+      </div>
+      <div class="game_chip" id="lizard">
+        <div class="border lizard_border">
+          <div class="background">
+            <img src="/images/icon-lizard.svg" class="game_chip_icon" alt="lizard"/>
+          </div>
+        </div>
+      </div>
+         <div class="game_chip" id="paper">
+          <div class="border paper_border">
+            <div class="background">
+              <img src="/images/icon-paper.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+        </div>
+        <div class="game_chip" id="scissors">
+          <div class="border scissors_border">
+            <div class="background">
+              <img src="/images/icon-scissors.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+        </div>
+        <div class="game_chip" id="rock">
+          <div class="border rock_border">
+            <div class="background">
+              <img src="/images/icon-rock.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="result">
+      <div class="result_selections">
+        <div id="player_choice" class="game_chip">
+          <div class="border scissors_border">
+            <div class="background">
+              <img src="/images/icon-scissors.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+          <p>You chose</p>
+        </div>
+        <div id="computer_choice" class="game_chip">
+          <div class="border rock_border">
+            <div class="background">
+              <img src="/images/icon-rock.svg" class="game_chip_icon" alt="paper"/>
+            </div>
+          </div>
+          <p>Computer chose</p>
+        </div>
+      </div>
+      <h2 class="player_result">You win</h2>
+      <button id="btn_play_again">Play again</button>
+    </div>
+    <script src="app.js" ></script>
+  </body>
+</html>

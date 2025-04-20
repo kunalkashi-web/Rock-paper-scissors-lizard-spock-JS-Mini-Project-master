@@ -1,0 +1,209 @@
+:root {
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a294a;
+  color: white;
+  font-family: "Barlow Semi Condensed", Courier;
+  padding: 1em;
+}
+
+#score_board {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  line-height: 0.9;
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 6px;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0.75em;
+}
+#score_board :first-child {
+  font-size: 1.3em;
+}
+
+#score_board :last-child {
+  background-color: white;
+  color: var(--dark-text);
+  padding: 0.25em 0.75em;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#player_score {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--score-text);
+}
+
+/* =============+*/
+/* == Game Board ==*/
+/* =============+*/
+
+#game_board {
+  min-height: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 4em;
+  position: relative;
+}
+
+#scissors {
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  top: 15%;
+}
+
+#spock {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+#paper {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -50px;
+}
+
+#rock {
+  position: absolute;
+  right: 12%;
+  bottom: 0px;
+}
+
+#lizard {
+  position: absolute;
+  left: 12%;
+  bottom: 0px;
+}
+/* =============+*/
+/* == Game Chip ==*/
+/* ============= */
+
+.game_chip {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_chip:hover {
+  cursor: pointer;
+}
+
+.border {
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.paper_border {
+  background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.rock_border {
+  background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.scissors_border {
+  background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.spock_border {
+  background-image: linear-gradient(hsl(187, 71%, 52%), hsl(187, 82%, 59%));
+}
+
+.lizard_border {
+  background-image: linear-gradient(hsl(276, 89%, 49%), hsl(276, 86%, 60%));
+}
+
+.background {
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_chip_icon {
+  max-width: 100%;
+}
+
+/* =============+*/
+/* == Result Section ==*/
+/* ============= */
+
+#result {
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  background-color: #1a294a;
+  top: 20%;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 6em;
+  margin: 0 auto;
+  display: none;
+  max-width: 600px;
+}
+
+.result_selections {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+#player_choice {
+  display: block;
+}
+#player_choice p {
+  margin-top: 1em;
+}
+#computer_choice {
+  display: block;
+}
+#computer_choice p {
+  margin-top: 1em;
+}
+
+.player_result {
+  font-size: 3.5rem;
+  margin: 0.5em 0;
+}
+
+/* ============= */
+/* == Common == */
+/* ============= */
+
+button {
+  background-color: white;
+  padding: 1em 5em;
+  text-transform: uppercase;
+  font-family: "Barlow Semi Condensed", Courier;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  letter-spacing: 0.24rem;
+  border: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(217, 219, 240);
+}
