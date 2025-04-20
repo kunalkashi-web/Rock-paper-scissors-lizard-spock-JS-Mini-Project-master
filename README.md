@@ -2,7 +2,7 @@
 
 Frontend mentor challenge where I needed to develop the ever popular rock, paper, scissors, lizard, spock game!
 
-## Play it here - [LivePreview]()
+## Play it here - [LivePreview](https://rock-paper-scissors-lizard-spock-js-mini-project-master.vercel.app/)
 
 ## Screenshots
 
